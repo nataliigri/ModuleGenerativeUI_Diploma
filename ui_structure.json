@@ -1,0 +1,250 @@
+{
+  "screens": [
+    {
+      "id": "onboarding",
+      "title": "Онбординг",
+      "components": [
+        {
+          "type": "image",
+          "src": "onboarding_image"
+        },
+        {
+          "type": "text",
+          "text": "Привіт! Це застосунок для фінансового менеджменту та трекінгу бюджету."
+        },
+        {
+          "type": "button",
+          "text": "Розпочати",
+          "action": "login"
+        }
+      ]
+    },
+    {
+      "id": "login",
+      "title": "Увійти",
+      "components": [
+        {
+          "type": "text_input",
+          "label": "Логін"
+        },
+        {
+          "type": "password_input",
+          "label": "Пароль"
+        },
+        {
+          "type": "button",
+          "text": "Увійти",
+          "action": "main"
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "title": "Головна сторінка",
+      "components": [
+        {
+          "type": "card",
+          "title": "Баланс",
+          "value": "10,000 грн"
+        },
+        {
+          "type": "card",
+          "title": "Останні транзакції",
+          "value": "5 транзакцій"
+        },
+        {
+          "type": "button",
+          "text": "Додати транзакцію",
+          "action": "add_transaction"
+        }
+      ]
+    },
+    {
+      "id": "transaction_history",
+      "title": "Історія транзакцій",
+      "components": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "title": "Транзакція 1",
+              "value": "500 грн"
+            },
+            {
+              "title": "Транзакція 2",
+              "value": "200 грн"
+            },
+            {
+              "title": "Транзакція 3",
+              "value": "300 грн"
+            }
+          ]
+        },
+        {
+          "type": "filter",
+          "options": [
+            {
+              "label": "Всі",
+              "value": "all"
+            },
+            {
+              "label": "Приходи",
+              "value": "income"
+            },
+            {
+              "label": "Витрати",
+              "value": "expense"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "categories",
+      "title": "Категорії витрат",
+      "components": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "title": "Харчування",
+              "value": "30%"
+            },
+            {
+              "title": "Транспорт",
+              "value": "20%"
+            },
+            {
+              "title": "Розваги",
+              "value": "10%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "budget_overview",
+      "title": "Огляд бюджету",
+      "components": [
+        {
+          "type": "chart",
+          "data": [
+            {
+              "label": "Харчування",
+              "value": 30
+            },
+            {
+              "label": "Транспорт",
+              "value": 20
+            },
+            {
+              "label": "Розваги",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "savings_goals",
+      "title": "Цілі накопичення",
+      "components": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "title": "Купити автомобіль",
+              "value": "50,000 грн"
+            },
+            {
+              "title": "Поїхати у відпустку",
+              "value": "20,000 грн"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add_transaction",
+      "title": "Додати транзакцію",
+      "components": [
+        {
+          "type": "text_input",
+          "label": "Назва транзакції"
+        },
+        {
+          "type": "number_input",
+          "label": "Сума"
+        },
+        {
+          "type": "select",
+          "label": "Категорія",
+          "options": [
+            {
+              "label": "Харчування",
+              "value": "food"
+            },
+            {
+              "label": "Транспорт",
+              "value": "transport"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "Додати",
+          "action": "main"
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "title": "Профіль",
+      "components": [
+        {
+          "type": "text",
+          "text": "Привіт, [ім'я користувача]!"
+        },
+        {
+          "type": "button",
+          "text": "Вийти",
+          "action": "login"
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "title": "Статистика",
+      "components": [
+        {
+          "type": "chart",
+          "data": [
+            {
+              "label": "Транзакції за місяць",
+              "value": 50
+            },
+            {
+              "label": "Середня сума транзакції",
+              "value": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Налаштування",
+      "components": [
+        {
+          "type": "switch",
+          "label": "Оновлювати дані автоматично"
+        },
+        {
+          "type": "button",
+          "text": "Зберегти",
+          "action": "main"
+        }
+      ]
+    }
+  ]
+}
