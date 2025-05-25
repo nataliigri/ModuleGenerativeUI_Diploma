@@ -27,8 +27,8 @@ ModuleGenerativeUI_Diploma/
 
 1. Клонуйте репозиторій:
 
-git clone https://github.com/your-username/ui-generator.git
-cd ui-generator
+git clone https://github.com/your-username/ModuleGenerativeUI_Diploma.git
+cd ModuleGenerativeUI_Diploma
 
 2. Встановіть залежності:
 
